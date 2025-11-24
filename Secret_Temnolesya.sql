@@ -99,4 +99,5 @@ SELECT
     total_amount::real/race_buyers AS avg_amount_per_buyer
 FROM gamers_stat JOIN orders_stat USING(race_id) JOIN buyers_stat USING(race_id)
 JOIN fantasy.race USING(race_id)
-ORDER BY avg_amount_per_buyer DESC --Большое спасибо за замечания!:):^)
+
+ORDER BY avg_amount_per_buyer DESC
